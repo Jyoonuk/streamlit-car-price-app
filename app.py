@@ -3,6 +3,7 @@ from app_eda import run_eda
 from app_home import run_home
 from app_ml import run_ml
 import streamlit as st
+import numpy as np
 
 def main () :
     st.title('자동차 가격 예측')

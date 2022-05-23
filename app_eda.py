@@ -3,6 +3,7 @@ import streamlit as st
 import pandas as pd
 import seaborn as sb 
 import matplotlib.pyplot as plt
+import numpy as np
 
 def run_eda() : 
     st.subheader('데이터 분석')
