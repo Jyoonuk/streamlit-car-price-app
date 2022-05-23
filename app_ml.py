@@ -28,7 +28,7 @@ def run_ml() :
         gender = 1 
 
     age = st.number_input('나이 입력',0,120)
-    salary = st.number_input('연봉 입력',)
+    salary = st.number_input('연봉 입력',0,)
     debt = st.number_input('카드빚 입력',0,)
     worth = st.number_input('자산 입력',0,)
 
@@ -37,7 +37,7 @@ def run_ml() :
          # 1. 신규 고객의 정보를 넘파이 어레이로 만들어준다.
         new_data = np.array([gender,age,salary,debt,worth])
     
-        # 2. 학습할때 사용한 X의 피처스케일러를 사용해서, 스케일링한다.
+        # 2. 학습할때 사용한 X의 피처스케일러를 사용해서, 스케일링한다.p
         # 먼저, 데이터를 2차원으로 만들어 준다.
         new_data = new_data.reshape(1,5)
         new_data = scaler_X.transform(new_data)
