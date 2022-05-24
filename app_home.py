@@ -6,4 +6,3 @@ def run_home():
 
     st.text('코드가 수정되었습니다.')
     st.subheader('점심을 뭐먹을까 ? ')
-    st.text('코드 수정하기')
